@@ -1,0 +1,114 @@
+:root {
+  --colorFondo: #111;
+  --colorContenedores: #252525;
+  --colorRojo: #ff4f4f;
+  --colorDominante: #bd4bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  transition: 0.3s;
+}
+
+#ventanaIniciarSesion {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--colorFondo);
+}
+
+#panelIzquierdo {
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mask-image: linear-gradient(to right, var(--colorFondo) 80%, transparent);
+}
+
+#panelIzquierdo img {
+  height: 100%;
+}
+
+#panelDerecho {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formIniciarSesion {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  background-color: var(--colorContenedores);
+  border-radius: 10px;
+  padding: 10px 30px;
+  gap: 15px;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  font-weight: 600;
+  color: grey;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+#inputs * {
+  font-size: medium;
+  font-weight: 600;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid grey;
+  color: grey;
+  padding: 5px 0px;
+}
+
+#inputs *:focus {
+  color: white;
+  border-color: white;
+}
+
+#msgErrorIniciarSesion {
+  font-weight: 600;
+  color: var(--colorRojo);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+footer button {
+  background: none;
+  border: 2px solid white;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer button:active {
+  transform: scale(0.95);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--colorDominante), transparent);
+  margin: 5px;
+}
