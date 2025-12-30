@@ -53,7 +53,7 @@
   <div id="modalAyuda">
     <div id="contenedorInformaciónAyuda">
       <header>
-        <h1>¿Como monitoreo un servidor?</h1>
+        <h1>¿Cómo monitorear un servidor?</h1>
         <button id="btnCerrarModalAyuda" title="cerrar">❌</button>
         <hr>
       </header>
